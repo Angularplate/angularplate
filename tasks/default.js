@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 
-var runSequence = require('run-sequence');
+var runSequence = require('run-sequence').use(gulp);
 
 gulp.task('default', ['clean'], function () {
   runSequence('assets', 'base', 'app', 'common', 'vendor');
