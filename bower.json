@@ -1,0 +1,15 @@
+{
+  "author": "Matthew Phillips-Hider",
+  "name": "angularplate",
+  "version": "0.0.1",
+  "description": "An Angular template/boilerplate implementing best practices and modern technologies",
+  "devDependencies": {
+    "angular": "~1.3.x",
+    "angular-animate": "~1.3.x",
+    "angular-mocks": "~1.3.x",
+    "angular-sanitize": "~1.3.x",
+    "angular-ui-router": "~0.2.15",
+    "susy": "~2.2.3",
+    "include-media": "~1.1.2"
+  }
+}

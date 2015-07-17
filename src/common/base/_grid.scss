@@ -1,0 +1,28 @@
+/* Changing Susy default global settings */
+$susy: (
+    /* Tells Susy to use 12 columns */
+    columns: $number-of-columns,
+    /* Tells Susy that the container has a max-width of 1120px */
+    container: 1120px,
+    /* Tells Susy to use border-box */
+    global-box-sizing: border-box
+);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+%container {
+    @include container;
+}
+
+.container {
+    @extend %container;
+}
+
+@each $breakpoint in $breakpoints {
+    @for $column-number from 1 through $number-of-columns {
+        .#{$breakpoint}-#{$column-number} {
+            @include span($column-number of $number-of-columns);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Distributed files
+dist/
+
+# Jetbrains IDEs
+.idea/
+
+# Cordova
+.cordova/
+
+# OSX
+.DS_Store
+
+# Logs
+logs/
