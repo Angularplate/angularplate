@@ -13,9 +13,9 @@ angular.module('app.about').config(function config($stateProvider) {
     },
     data: {
       meta: {
-        title: 'An Angular template/boilerplate implementing best practices and modern technologies',
-        description: 'Angularplate is a TODO',
-        keywords: 'Angularplate, Home, AngularJS, Boilerplate, Best-practice',
+        title: 'Angularplate - About',
+        description: 'An Angular template/boilerplate implementing best practices and modern technologies',
+        keywords: 'Angularplate, About, AngularJS, Boilerplate, Best-practice',
         canonical: 'About',
         url: 'about/'
       }
