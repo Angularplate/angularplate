@@ -7,7 +7,7 @@ angular.module('app.about').config(function config($stateProvider) {
     url: '^/about',
     views: {
       "main": {
-        templateUrl: 'views/about/about.tpl.html',
+        templateUrl: '/views/about/about.tpl.html',
         controller: 'AboutCtrl'
       }
     },
