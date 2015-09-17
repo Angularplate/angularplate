@@ -22,7 +22,7 @@ gulp.task('app-styles', function () {
   return gulp.src(src)
     .pipe(plumber())
     .pipe(sass({
-            sourceComments: productionEnv ? 'none' : 'map',
+            sourceComments: !productionEnv,
             outputStyle: productionEnv ? 'compressed' : 'nested',
             errLogToConsole: true
           }))
